@@ -1,0 +1,95 @@
+.footer{
+    width: 100%;
+    background: @color-black;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 18px;
+    line-height: 140%; 
+    padding: 68px 76px 75px 76px;
+    border-radius: @border-radius-32;
+    font-family: 'Inter Display Regular'; 
+    text-align: left;
+    &_top{
+        display: grid;
+        column-gap: 20px;
+        grid-template-columns: 5fr 3fr 4fr;
+        &_title{
+            font-size: 36px;
+            line-height: 120%;
+            color: @color-white;
+        }
+        &_social{
+            margin-top: 61px;
+            display: flex;
+            column-gap: 8px;
+            &_link{
+               width: 52px;
+               height: 52px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               background-color: @color-black-second;
+               border-radius: @border-radius-12; 
+            }
+        }
+        &_item{
+            &_address{
+                font-style: normal;
+            }
+            &_policy{
+                text-decoration: underline;
+            }
+        }
+        &_nav{
+            display: flex;
+            flex-direction: column;
+            width: 167px;
+            row-gap: 24px;
+            padding-top: 8px;
+            font-size: 17px;
+            line-height: 110%;
+            color: @color-white;
+        }
+        &_contact_info{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &_block{
+            display: flex;
+            column-gap: 12px;
+            &_img{
+                margin-top: 3px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    &_middle{
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+        padding-top: 166px;
+    }
+    &_logo{
+        width: 8.195vw;
+        height: 8.888vw;
+        display: block;
+    }
+    &_title{
+        margin-top: 28.33px;
+        width: 43.565vw;
+        height: fit-content;
+    }
+    &_bottom{
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        height: fit-content;
+        max-width: 100%;
+        &_icon{
+            width: auto;
+            height: 30px;
+        }  
+    }
+}

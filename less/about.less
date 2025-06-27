@@ -1,0 +1,37 @@
+.about{
+    text-align: center;
+    position: relative;
+    &_description{
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 120px 0;
+        z-index: 1;
+    }
+    &_gradient{
+        opacity: 0;
+        transition: 1s cubic-bezier(0, 0.5, 0, 1);
+        position: absolute;
+        top: -55.2%;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        &.hidden{
+            opacity: 1;
+        }
+    }
+    &_figures{
+        z-index: -2;
+        &_item{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        &_image{
+            max-width: 100%;
+        }
+    }
+}

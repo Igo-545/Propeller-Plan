@@ -1,0 +1,49 @@
+.progress{
+    z-index: -1;
+    padding: 60px 137px;
+    display: grid;
+    font-size: 72px;
+    line-height: 105%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 40px;
+    width: 100%;
+    &.progress_fz52{
+        font-size: 52px;
+        line-height: 110%;
+        padding: 60px 108px;
+    }
+    &_item{
+        &_num{
+            white-space: nowrap;
+            &.fire{
+                font-weight: bold;
+                color: transparent;
+                background: linear-gradient(90deg, #ff9c00 0%, #ff0000 25%, #ffe000 50%, #ff0000 75%, #ff9c00 100%);
+                background-size: 200% 100%;
+                background-clip: text;
+                text-shadow: 0 0 8px rgba(255, 156, 0, 0.8), 0 0 8px rgba(255, 0, 0, 0.6), 0 0 8px rgba(255, 224, 0, 0.4);
+                animation: fire-gradient 1.5s linear infinite;
+                white-space: nowrap;
+            }
+        }
+        &_line{
+            width: 100%;
+            height: 1px;
+            background-color: @background-grey-thourth;
+            margin: 32px 0; 
+        }
+        &_text{
+            padding: 0 20px;
+            font-size: 20px;
+            line-height: 130%;
+            font-family: 'Inter Display Regular';
+            color: @color-grey-second;
+            &_fz18{
+                font-size: 18px;
+                line-height: 140%;
+                padding: 0;
+            }
+        }
+    }
+}

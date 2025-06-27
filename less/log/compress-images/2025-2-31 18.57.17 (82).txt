@@ -1,0 +1,8 @@
+File from: [app/images/src/slider-img-2.png]
+
+File to: [app/images/dest/slider-img-2.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\Users\User\Desktop\Propeller Plan\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o app/images/dest/slider-img-2.png app/images/src/slider-img-2.png
+  error: failed writing image to app/images/dest/slider-img-2.png (16)

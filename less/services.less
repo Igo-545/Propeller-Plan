@@ -1,0 +1,67 @@
+.services{
+    padding: 80px 20px 60px 20px;
+    &_cards{
+        margin-top: 80px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+    &_card{
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        padding: 40px;
+        z-index: 1;
+        border-radius: @border-radius-24;
+        &::after{
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: @background-grey-third;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            border-radius: @border-radius-24;
+        }
+        &_icon{
+            border-radius: @border-radius-24;
+        }
+        &_title{
+            padding-top: 84px;
+            font-size: 28px;
+            line-height: 120%;
+        }
+        &_list{
+            padding-top: 16px;
+            font-size: 18px;
+            line-height: 140%;
+            font-family: 'Inter Regular';
+            color: @color-grey-thourth;
+        }
+        &_item{
+            text-indent: -13px;
+            padding-left: 13px;
+        }
+        &:hover .services_gradient{
+            opacity: 1;
+        }
+    }
+    &_icon{
+        width: 52px;
+        height: 52px;
+    }
+    &_button{
+        margin-top: 60px;
+    }
+    &_gradient{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: -1;
+    }
+}
