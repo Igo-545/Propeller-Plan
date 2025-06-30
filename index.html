@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/dest/Propeller_Plan_ic_black_mono.ico">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function timestamp(){
+            var response = document.getElementById('g-recaptcha-response');
+            if(response == 'null' || response.value.trim() == ''){
+                var elems = JSON.parse(document.getElementById('captcha_settings').value);
+                elems['ts'] = JSON.stringify(new Date().getTime());
+                document.getElementById('captcha_settings').value = JSON.stringify(elems);
+            }
+        }
+        setInterval(timestamp, 500);
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZEV8W2443"></script>
+    <!-- Google tag (gtag.js) -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1ZEV8W2443');
+    </script>
+    <title>Propeller Plan</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_block">
+            <a href="index.html" class="header_logo">
+                <img src="images/dest/header-logo-icon.svg" alt="Header Logo Icon" class="header_logo_icon">
+                <img src="images/dest/Propeller Plan.svg" alt="Header Logo Label" class="header_logo_label">
+            </a>
+            <a href="https://appexchange.salesforce.com/appxConsultingListingDetail?listingId=2028944c-f680-4b2d-85cc-ae998d73e35c&legacy=true" target="_blank">
+               <img src="images/dest/Salesforce_Partner_Badge_Since_2018_Hrzntl_RGB 1.png" alt="Propeller Plan Badge" class="header_logo_badge">
+            </a>
+        </div>
+        <nav class="header_nav">
+            <a href="#scroll_to_services" class="header_nav_link" id="scroll_to_section">Service</a>
+            <a href="#scroll_to_packages" class="header_nav_link" id="scroll_to_section">Packages</a>
+            <a href="about.html" class="header_nav_link">Team</a>
+            <a href="contact.html" class="header_nav_link">Contact</a>
+            <a href="#form" class="header_nav_button" id="scroll_to_form">Lets Connect</a>
+        </nav>
+        <div class="header_humburger">
+            <div class="header_humburger_line1"></div>
+            <div class="header_humburger_line2"></div>
+        </div>
+    </header>
+    <menu class="menu">
+        <div class="menu_nav">
+            <div class="menu_nav_links">
+                <a href="#scroll_to_services" class="menu_nav_link" id="link_dinamic">Service</a>
+                <a href="#scroll_to_packages" class="menu_nav_link" id="link_dinamic">Packages</a>
+                <a href="about.html" class="menu_nav_link">Team</a>
+                <a href="contact.html" class="menu_nav_link">Contact</a>
+            </div>
+            <a href="#form" class="menu_nav_button" id="link_dinamic">Lets Connect</a>
+        </div>
+    </menu>
+    <div class="cookies-wrapper">
+        <p class="cookies-text">
+            We use cookies to personalize content<br> 
+            and improve the performance of our website.
+        </p>
+        <div class="cookies-buttons">
+            <div role="button" class="cookies-button button-close">Ok, thanks</div>
+            <div role="button" class="cookies-button-2 button-close">Decline</div>
+        </div>
+    </div>
+    <main>
+        <section class="hero">
+            <video class="hero_video" autoplay muted playsinline>
+                <source src="video/propeller-cover.mp4" type="video/mp4" />
+            </video>
+            <div class="hero_content">
+                <h1 class="hero_title">
+                    Salesforce Experts.
+                    Propelling your clouds
+                </h1>
+                <button class="button" id="scroll_to_section" href="#scroll_to_services">
+                    <span class="button_text">Our Services<span>
+                    <div class="button_circle">
+                        <div class="button_text">
+                            <span>Our Services</span>
+                            <img src="images/dest/arrow-button.svg" alt="Arrow Button">
+                        </div>
+                    </div>   
+                </button>
+            </div>
+            <div class="hero_bubbles">
+                <div class="hero_bubbles_items">
+                    <div class="hero_bubbles_item hero_bubbles_item_1">
+                        <p class="hero_bubbles_name">Chief Executive Propeller</p>
+                        <img src="images/dest/img_small_yarik.jpg" class="hero_bubbles_photo" alt="Photo photo1"/>
+                    </div>
+                    <div class="hero_bubbles_item hero_bubbles_item_2">
+                        <img src="images/dest/img_small_kristina.jpg" class="hero_bubbles_photo" alt="Photo photo2"/>
+                        <p class="hero_bubbles_name">Senior Consulting Propeller</p>   
+                    </div>
+                </div>
+                <div class="hero_bubbles_items">
+                    <div class="hero_bubbles_item hero_bubbles_item_3">
+                        <p class="hero_bubbles_name">Chief Business Development Propeller</p>
+                        <img src="images/dest/img_small_volha.jpg" class="hero_bubbles_photo" alt="Photo photo3"/>
+                    </div>
+                    <div class="hero_bubbles_item hero_bubbles_item_4">
+                        <img src="images/dest/img_small_sergey.jpg" class="hero_bubbles_photo" alt="Photo photo4"/>
+                        <p class="hero_bubbles_name">Lead Propeller, Salesforce Architect</p>
+                    </div>
+                </div>
+                <div class="hero_bubbles_items">
+                    <div class="hero_bubbles_item hero_bubbles_item_5">
+                        <p class="hero_bubbles_name">Middle Propeller</p>
+                        <img src="images/dest/img_small_aleks.jpg" class="hero_bubbles_photo" alt="Photo photo5"/>
+                    </div>
+                    <div class="hero_bubbles_item  hero_bubbles_item_6">
+                        <img src="images/dest/img_small_alina.jpg" class="hero_bubbles_photo" alt="Photo photo6"/>
+                        <p class="hero_bubbles_name">Propeller Analyst</p>
+                    </div>
+                </div>
+            </div>
+            <img src="images/dest/hero_gradient.svg" alt="Hero Gradient" class="hero_gradient">
+        </section>
+        <section class="about">
+            <div class="about_description">
+                <div class="text_block">
+                    <h3 class="subtitle">Team</h3>
+                    <h2 class="title">
+                        Propeller Plan is an authorized Salesforce partner
+                        helping businesses optimize Salesforce with expert
+                        implementation, customization, and support since 2016
+                    </h2>
+                </div>
+                <img src="images/dest/gradient-about.svg" alt="About Gradient" class="about_gradient">
+            </div>
+            <div class="about_figures">
+                <img src="images/dest/Clouds (1).png" class="about_figures_image" alt="image Clouds">
+            </div>
+        </section>
+        <section class="progress">
+            <div class="progress_item">
+                <span class="progress_item_num">200</span>+
+                <div class="progress_item_line"></div>
+                <p class="progress_item_text">Salesforce projects</p>
+            </div>
+            <div class="progress_item">
+                <span class="progress_item_num fire">70 yrs</span>
+                <div class="progress_item_line"></div>
+                <p class="progress_item_text">Shared team experience</p>
+            </div>
+            <div class="progress_item">
+                <span class="progress_item_num">25</span>+
+                <div class="progress_item_line"></div>
+                <p class="progress_item_text">Overall customers worldwide</p>
+            </div>
+        </section>
+        <section class="consultation">
+            <div class="card card_consultation text_block">
+                <div class="col-1">
+                    <img src="images/dest/PP_Call_Architekt_2.jpg" alt="Card Image" class="card_col-1_img consultation_img">
+                </div>
+                <div class="card_col-2">
+                    <h3 class="card_title">
+                        Call with Salesforce Architect
+                        Free consultation
+                    </h3>
+                    <ol class="card_list">
+                        <li class="card_item">
+                            <span class="card_item_number">1</span>
+                            <p class="card_item_text">Tired of trying breaking Salesforce problems down?</p>
+                        </li>
+                        <li class="card_item">
+                            <span class="card_item_number">2</span>
+                            <p class="card_item_text">Can't find a solution?</p> 
+                        </li>
+                        <li class="card_item">
+                            <span class="card_item_number">3</span>
+                            <p class="card_item_text">Too much to handle?</p>
+                        </li>
+                        <li class="card_item">
+                            <span class="card_item_number">✓</span> 
+                            <p class="card_item_text">Try our emergency approach?</p>
+                        </li>
+                    </ol>
+                    <button onclick = "window.open('https://calendly.com/architect-propellerplan/30min', '_blank')" class="button consultation_button">
+                        <span class="button_text">Schedule a call<span>
+                        <div class="button_circle">
+                            <div class="button_text">
+                                <span>Schedule a call</span>
+                                <img src="images/dest/arrow-button.svg" alt="Arrow Button">
+                            </div>
+                        </div>   
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="scroll_to_services">
+            <div class="text_block">
+                <h3 class="subtitle">Services</h3>
+                <h2 class="title">
+                    Our Salesforce services 
+                    for your business
+                </h2>
+            </div>
+            <div class="services_cards text_block">
+                <div class="services_card">
+                    <img src="images/dest/ic_Implementation.svg" alt="Implementation Icon" class="services_icon">
+                    <h4 class="services_card_title">Salesforce Implementation</h4>
+                    <ul class="services_card_list">
+                        <li class="services_card_item">- Salesforce consulting</li>
+                        <li class="services_card_item">- Salesforce implementation from scratch</li>
+                        <li class="services_card_item">- Data migration</li>
+                        <li class="services_card_item">- Integration with third party systems</li>
+                        <li class="services_card_item">- Quality assurance</li>
+                        <li class="services_card_item">- User training</li>
+                        <li class="services_card_item">- Support</li>
+                    </ul>
+                    <img src="images/dest/service-gradient.svg" alt="Services Gradient" class="services_gradient">
+                </div>
+                <div class="services_card">
+                    <img src="images/dest/ic_Development.svg" alt="Development Icon" class="services_icon">
+                    <h4 class="services_card_title">Salesforce Development</h4>
+                    <ul class="services_card_list">
+                        <li class="services_card_item">- Lightning page components creation and customization</li>
+                        <li class="services_card_item">- Custom automations development</li>
+                        <li class="services_card_item">- Community/portal Development</li>
+                        <li class="services_card_item">- Custom application development</li>
+                        <li class="services_card_item">- Salesforce administration</li>
+                        <li class="services_card_item">- Testing</li>
+                    </ul>
+                    <img src="images/dest/service-gradient.svg" alt="Services Gradient" class="services_gradient">
+                </div>
+                <div class="services_card">
+                    <img src="images/dest/ic_Data migration.svg" alt="Data migration Icon" class="services_icon">
+                    <h4 class="services_card_title">Salesforce Data Migration</h4>
+                    <ul class="services_card_list">
+                        <li class="services_card_item">- Data preparation and mapping</li>
+                        <li class="services_card_item">- Quality assurance</li>
+                        <li class="services_card_item">- Data migration from external and legacy systems</li>
+                    </ul>
+                    <img src="images/dest/service-gradient.svg" alt="Services Gradient" class="services_gradient">
+                </div>
+                <div class="services_card">
+                    <img src="images/dest/ic_Support.svg" alt="Support Icon" class="services_icon">
+                    <h4 class="services_card_title">Salesforce Support</h4>
+                    <ul class="services_card_list">
+                        <li class="services_card_item">- Health & security Checks</li>
+                        <li class="services_card_item">- Maintenance of day-to-day tasks</li>
+                        <li class="services_card_item">- Running QA Tests</li>
+                    </ul>
+                    <img src="images/dest/service-gradient.svg" alt="Services Gradient" class="services_gradient">
+                </div>
+                <div class="services_card">
+                    <img src="images/dest/ic_Integration.svg" alt="Integration Icon" class="services_icon">
+                    <h4 class="services_card_title">Salesforce Integration</h4>
+                    <ul class="services_card_list">
+                        <li class="services_card_item">- Integration with third party systems</li>
+                        <li class="services_card_item">- Creation of centralized User Experience</li>
+                        <li class="services_card_item">- Data mapping and data migration</li>
+                    </ul>
+                    <img src="images/dest/service-gradient.svg" alt="Services Gradient" class="services_gradient">
+                </div>
+                <div class="services_card">
+                    <img src="images/dest/ic_Ai.svg" alt="Ai Icon" class="services_icon">
+                    <h4 class="services_card_title">Salesforce AI</h4>
+                    <ul class="services_card_list">
+                        <li class="services_card_item">- Agentforce</li>
+                        <li class="services_card_item">- Sales AI</li>
+                        <li class="services_card_item">- Customer Service AI</li>
+                        <li class="services_card_item">- Marketing AI</li>
+                        <li class="services_card_item">- Commerce AI</li>
+                    </ul>
+                    <img src="images/dest/service-gradient.svg" alt="Services Gradient" class="services_gradient">
+                </div>
+            </div>
+            <button class="button services_button" id="scroll_to_form" onclick="window.open('https://calendly.com/consultant-propellerplan/30min', '_blank')">
+                <span class="button_text">Book a consultation<span>
+                <div class="button_circle">
+                    <div class="button_text">
+                        <span>Book a consultation</span>
+                        <img src="images/dest/arrow-button.svg" alt="Arrow Button">
+                    </div>
+                </div>   
+            </button>
+        </section>
+        <section class="packages" id="scroll_to_packages">
+            <div class="text_block">
+                <h3 class="subtitle">Packages</h3>
+                <h2 class="title">
+                   Increase sales and improve customer loyalty
+                   with core Salesforce solutions
+                </h2>
+            </div>
+            <nav class="packages_nav">
+                <a href="#card_1" class="packages_nav_link">Sales Cloud</a>
+                <a href="#card_2" class="packages_nav_link">Service Cloud</a>
+                <a href="#card_3" class="packages_nav_link packages_nav_link_w">Experience Cloud</a>
+                <a href="#card_4" class="packages_nav_link">Agentforce</a>
+            </nav>
+            <div class="packages_cards">
+                <div class="card packages_card text_block" id="card_1">
+                    <div class="card_col-1">
+                        <img src="images/dest/card-gradient.svg" alt="Card Gradient" class="card_col-1_gradient">
+                        <img src="images/dest/package-img-1.jpg" alt="Card Image" class="card_col-1_img">
+                        <img src="images/dest/Icon_Sales_cloud.png" alt="Card Icon" class="card_icon">
+                    </div>
+                    <div class="card_col-2">
+                        <h3 class="card_title">
+                            Sales Cloud Starter Kit
+                        </h3>
+                        <div class="packages_card_items">
+                            <div class="packages_card_item">
+                                <h4 class="packages_card_item_title">6 600$</h4>
+                                <p class="packages_card_item_text">Price</p>
+                            </div>
+                            <div class="packages_card_item">
+                                <h4 class="packages_card_item_title">4 weeks</h4>
+                                <p class="packages_card_item_text">Approximately timeline</p>
+                            </div>
+                        </div>
+                        <div class="packages_card_text">
+                            Boost your sales and acquire new leads
+                            with Sales Cloud.
+                        </div>
+                        <button class="button button_white card_button card_button_w" id="button-1">
+                            <span class="button_text button_text_black">Show more<span>
+                            <div class="button_circle button_circle_black">
+                                <div class="button_text button_text_white">
+                                    <span>Show more</span>
+                                    <img src="images/dest/arrow-button-white.svg" alt="Arrow Button">
+                                </div>
+                            </div>   
+                        </button>
+                    </div>
+                </div>
+                <div class="card packages_card text_block" id="card_2">
+                    <div class="card_col-1">
+                        <img src="images/dest/card-gradient.svg" alt="Card Gradient" class="card_col-1_gradient">
+                        <img src="images/dest/packages-img-2.jpg" alt="Card Image" class="card_col-1_img">
+                        <img src="images/dest/Icon_Service Cloud.png" alt="Card Icon" class="card_icon">
+                    </div>
+                    <div class="card_col-2">
+                        <h3 class="card_title">
+                            Service Cloud Starter Kit
+                        </h3>
+                        <div class="packages_card_items">
+                            <div class="packages_card_item">
+                                <h4 class="packages_card_item_title">6 600$</h4>
+                                <p class="packages_card_item_text">Price</p>
+                            </div>
+                            <div class="packages_card_item">
+                                <h4 class="packages_card_item_title">8 weeks</h4>
+                                <p class="packages_card_item_text">Approximately timeline</p>
+                            </div>
+                        </div>
+                        <div class="packages_card_text">
+                            Leverage Service Cloud to enhance the efficiency of your
+                            service operations and boost customer satisfaction.
+                        </div>
+                        <button class="button button_white card_button card_button_w" id="button-2">
+                            <span class="button_text button_text_black">Show more<span>
+                            <div class="button_circle button_circle_black">
+                                <div class="button_text button_text_white">
+                                    <span>Show more</span>
+                                    <img src="images/dest/arrow-button-white.svg" alt="Arrow Button">
+                                </div>
+                            </div>   
+                        </button>
+                    </div>
+                </div>
+                <div class="card packages_card text_block" id="card_3">
+                    <div class="card_col-1">
+                        <img src="images/dest/card-gradient.svg" alt="Card Gradient" class="card_col-1_gradient">
+                        <img src="images/dest/package-img-3.jpg" alt="Card Image" class="card_col-1_img">
+                        <img src="images/dest/Icon_Experience.png" alt="Card Icon" class="card_icon">
+                    </div>
+                    <div class="card_col-2">
+                        <h3 class="card_title">
+                            Experience Cloud Starter Kit
+                        </h3>
+                        <div class="packages_card_items">
+                            <div class="packages_card_item">
+                                <h4 class="packages_card_item_title">6 600$</h4>
+                                <p class="packages_card_item_text">Price</p>
+                            </div>
+                            <div class="packages_card_item">
+                                <h4 class="packages_card_item_title">6 weeks</h4>
+                                <p class="packages_card_item_text">Approximately timeline</p>
+                            </div>
+                        </div>
+                        <div class="packages_card_text">
+                            We’ll tailor your Experience Cloud portal to transform how you 
+                            interact and engage with your customers, enhancing your
+                            business relationships.
+                        </div>
+                        <button class="button button_white card_button card_button_w" id="button-3">
+                            <span class="button_text button_text_black">Show more<span>
+                            <div class="button_circle button_circle_black">
+                                <div class="button_text button_text_white">
+                                    <span>Show more</span>
+                                    <img src="images/dest/arrow-button-white.svg" alt="Arrow Button">
+                                </div>
+                            </div>   
+                        </button>
+                    </div>
+                </div>
+                <div class="card  packages_card text_block" id="card_4">
+                    <div class="card_col-1">
+                        <img src="images/dest/card-gradient.svg" alt="Card Gradient" class="card_col-1_gradient">
+                        <img src="images/dest/package-img-4.jpg" alt="Card Image" class="card_col-1_img">
+                        <img src="images/dest/Icon_Agentforce.png" alt="Card Icon" class="card_icon">
+                    </div>
+                    <div class="card_col-2">
+                        <h3 class="card_title">
+                            Agentforce Starter Kit
+                        </h3>
+                        <div class="packages_card_items">
+                            <div class="packages_card_item">
+                                <h4 class="packages_card_item_title">6 600$</h4>
+                                <p class="packages_card_item_text">Price</p>
+                            </div>
+                            <div class="packages_card_item">
+                                <h4 class="packages_card_item_title">4 weeks</h4>
+                                <p class="packages_card_item_text">Approximately timeline</p>
+                            </div>
+                        </div>
+                        <div class="packages_card_text">
+                            Elevate your website with an AgentForce Quick Start
+                            package, featuring a personalized, user-friendly agent that 
+                            can initiate actions through a Lightning Flow.
+                        </div>
+                        <button class="button button_white card_button card_button_w" id="button-4">
+                            <span class="button_text button_text_black">Show more<span>
+                            <div class="button_circle button_circle_black">
+                                <div class="button_text button_text_white">
+                                    <span>Show more</span>
+                                    <img src="images/dest/arrow-button-white.svg" alt="Arrow Button">
+                                </div>
+                            </div>   
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button class="button card_button packages_button" id="scroll_to_form" href="#form">
+                <span class="button_text">Lets Partner<span>
+                <div class="button_circle">
+                    <div class="button_text">
+                        <span>Lets Partner</span>
+                        <img src="images/dest/arrow-button.svg" alt="Arrow Button">
+                    </div>
+                </div>   
+            </button>
+            <div class="popup" id="button-1-popup">
+                <div class="popup_wrapper">
+                    <div class="card popup_card popup_card_1">
+                        <div class="popup_col-1">
+                            <h3 class="popup_card_title">
+                                Sales Cloud Starter Kit
+                            </h3>
+                            <div class="packages_card_items popup_card_items">
+                                <div class="packages_card_item popup_card_item">
+                                    <h4 class="packages_card_item_title">6 600$</h4>
+                                    <p class="popup_card_item_text">Price</p>
+                                </div>
+                                <div class="packages_card_item popup_card_item">
+                                    <h4 class="packages_card_item_title">4 weeks</h4>
+                                    <p class="popup_card_item_text">Approximately timeline</p>
+                                </div>
+                            </div>
+                            <div class="packages_card_text popup_card_text">
+                                Boost your sales and acquire new leads
+                                with Sales Cloud.
+                            </div>    
+                        </div>
+                        <div class="popup_col-2">
+                            <img src="images/dest/package-img-1.jpg" alt="Popup Image Image1" class="popup_image">
+                        </div>
+                    </div>
+                    <ul class="popup_list">
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Consultation and Business Process Reviews</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Security and Sharing Model</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Lead Personalization: record types, up to 15 custom fields, validation rules, lead conversion mappings, layouts, up to 5 list views.</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Account Configuration: record types, up to 15 custom fields, validation rules, layouts, up to 5 list views</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Contact Customization: record types, up to 15 custom fields, validation rules, layouts, up to 5 list views</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Opportunity Configuration: record types, up to 15 custom fields, validation rules, layouts, up to 5 list views</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Configure Products: record types, up to 15 custom fields, validation rules, layouts, up to 5 list views</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Configure Price Books: record types, up to 15 custom fields, validation rules, layouts, up to 5 list views</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Sales Process Implementation</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Web-to-Lead</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Up to 5 Flow Automations</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Data import for Leads, Accounts, Contacts, Products with predefined CSV format</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Up to 5 Reports & Dashboards</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Testing and Deployment</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">User Training (90min remote training session)</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">2 weeks Support</p>
+                        </li>
+                    </ul>
+                    <a href="contact.html?package=Sales+Cloud+Starter+Kit#form" class="button popup_button">
+                        <span class="button_text">Order a package<span>
+                        <div class="button_circle">
+                            <div class="button_text">
+                                <span>Order a package</span>
+                                <img src="images/dest/arrow-button.svg" alt="Arrow Button">
+                            </div>
+                        </div>   
+                    </a> 
+                </div>
+                <button class="popup_close">
+                    <img src="images/dest/popup-close.svg" alt="Icon Close" class="popup_close_icon">
+                </button>
+            </div>
+            <div class="popup" id="button-2-popup">
+                <div class="popup_wrapper">
+                    <div class="card popup_card popup_card_2">
+                        <div class="popup_col-1">
+                            <h3 class="popup_card_title">
+                                Service Cloud Starter Kit
+                            </h3>
+                            <div class="packages_card_items popup_card_items">
+                                <div class="packages_card_item popup_card_item">
+                                    <h4 class="packages_card_item_title">6 600$</h4>
+                                    <p class="popup_card_item_text">Price</p>
+                                </div>
+                                <div class="packages_card_item popup_card_item">
+                                    <h4 class="packages_card_item_title">4 weeks</h4>
+                                    <p class="popup_card_item_text">Approximately timeline</p>
+                                </div>
+                            </div>
+                            <div class="packages_card_text popup_card_text">
+                                Leverage Service Cloud to enhance the efficiency of your
+                                service operations and boost customer satisfaction.
+                            </div>    
+                        </div>
+                        <div class="popup_col-2">
+                            <img src="images/dest/packages-img-2.jpg" alt="Popup Image Image2" class="popup_image">
+                        </div>
+                    </div>
+                    <ul class="popup_list">
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Consultation and Business Process Reviews</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Security and Sharing Model</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Service Cloud Console Setup</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Case Setup: up to 5 support processes, record types, up to 15 custom fields, validation rules, layouts, up to 5 list views, case contact roles, case team roles, and predefined teams, case queues, case assignment rules, auto-response rules, and case escalation rules</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Email-to-Case</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Web-to-Case</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Omni-Chanell Setup</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Up to 5 Flow Automations</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Up to 5 Reports & Dashboards</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Testing and Deployment</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">User Training (90min remote training session)</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">2 weeks Support</p>
+                        </li>
+                    </ul>
+                    <a href="contact.html?package=Service+Cloud+Starter+Kit#form" class="button popup_button">
+                        <span class="button_text">Order a package<span>
+                        <div class="button_circle">
+                            <div class="button_text">
+                                <span>Order a package</span>
+                                <img src="images/dest/arrow-button.svg" alt="Arrow Button">
+                            </div>
+                        </div>   
+                    </a> 
+                </div>
+                <button class="popup_close">
+                    <img src="images/dest/popup-close.svg" alt="Icon Close" class="popup_close_icon">
+                </button>
+            </div>
+            <div class="popup" id="button-3-popup">
+                <div class="popup_wrapper">
+                    <div class="card popup_card popup_card_3">
+                        <div class="popup_col-1">
+                            <h3 class="popup_card_title">
+                               Experience Cloud Starter Kit
+                            </h3>
+                            <div class="packages_card_items popup_card_items">
+                                <div class="packages_card_item popup_card_item">
+                                    <h4 class="packages_card_item_title">6 600$</h4>
+                                    <p class="popup_card_item_text">Price</p>
+                                </div>
+                                <div class="packages_card_item popup_card_item">
+                                    <h4 class="packages_card_item_title">4 weeks</h4>
+                                    <p class="popup_card_item_text">Approximately timeline</p>
+                                </div>
+                            </div>
+                            <div class="packages_card_text popup_card_text">
+                                We’ll tailor your Experience Cloud portal to transform how you 
+                                interact and engage with your customers, enhancing your
+                                business relationships.
+                            </div>    
+                        </div>
+                        <div class="popup_col-2">
+                            <img src="images/dest/package-img-3.jpg" alt="Popup Image Image3" class="popup_image">
+                        </div>
+                    </div>
+                    <ul class="popup_list">
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Consultation and solution design</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Security and Sharing Model</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Set Up Custom Community URL</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Set up Landing Tab or Page with company branding</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Setup Community portal</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Set up Community pages for Standard and Custom objects</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Set up self help Knowledge area</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Configure chatter for customers and partners</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">Testing and Deployment</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">User Training</p>
+                        </li>
+                        <li class="popup_item">
+                            <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                            <p class="popup_item_text">2 weeks Support</p>
+                        </li>
+                    </ul>
+                    <a href="contact.html?package=Experience+Cloud+Starter+Kit#form" class="button popup_button">
+                        <span class="button_text">Order a package<span>
+                        <div class="button_circle">
+                            <div class="button_text">
+                                <span>Order a package</span>
+                                <img src="images/dest/arrow-button.svg" alt="Arrow Button">
+                            </div>
+                        </div>   
+                    </a> 
+                </div>
+                <button class="popup_close">
+                    <img src="images/dest/popup-close.svg" alt="Icon Close" class="popup_close_icon">
+                </button>
+            </div>   
+            <div class="popup" id="button-4-popup">
+                <div class="popup_wrapper">
+                    <div class="card popup_card popup_card_4">
+                        <div class="popup_col-1">
+                            <h3 class="popup_card_title">
+                                Agentforce Starter Kit
+                            </h3>
+                            <div class="packages_card_items popup_card_items">
+                                <div class="packages_card_item popup_card_item">
+                                    <h4 class="packages_card_item_title">6 600$</h4>
+                                    <p class="popup_card_item_text">Price</p>
+                                </div>
+                                <div class="packages_card_item popup_card_item">
+                                    <h4 class="packages_card_item_title">4 weeks</h4>
+                                    <p class="popup_card_item_text">Approximately timeline</p>
+                                </div>
+                            </div>
+                            <div class="packages_card_text popup_card_text">
+                                Elevate your website with an AgentForce Quick Start
+                                package, featuring a personalized, user-friendly agent that 
+                                can initiate actions through a Lightning Flow.
+                            </div>    
+                        </div>
+                    <div class="popup_col-2">
+                        <img src="images/dest/package-img-4.jpg" alt="Popup Image Image4" class="popup_image">
+                    </div>
+                </div>
+                <ul class="popup_list">
+                    <li class="popup_item">
+                        <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                        <p class="popup_item_text">Project Kickoff and Business Process Reviews</p>
+                    </li>
+                    <li class="popup_item">
+                        <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                        <p class="popup_item_text">Deploy 1 Service or Sales Agent</p>
+                    </li>
+                    <li class="popup_item">
+                        <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                        <p class="popup_item_text">1 Agentforce TopicMax of 6 Agent Action</p>
+                    </li>
+                    <li class="popup_item">
+                        <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                        <p class="popup_item_text">Knowledge Base Setup</p>
+                    </li>
+                    <li class="popup_item">
+                        <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                        <p class="popup_item_text">Flow Configuration for Automated Actions</p>
+                    </li>
+                    <li class="popup_item">
+                        <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                        <p class="popup_item_text">Out of the Box Agentforce Analytics (Reports & Dashboards)</p>
+                    </li>
+                    <li class="popup_item">
+                        <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                        <p class="popup_item_text">Testing and Deployment</p>
+                    </li>
+                    <li class="popup_item">
+                        <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                        <p class="popup_item_text">User Training (90min remote training session)</p>
+                    </li>
+                    <li class="popup_item">
+                        <img src="images/dest/popup-checked-icon.svg" alt="Popup Checked Icon" class="popup_item_icon">
+                        <p class="popup_item_text">2 weeks Support</p>
+                    </li>
+                </ul>
+                <a href="contact.html?package=Agentforce+Starter+Kit#form" class="button popup_button">
+                    <span class="button_text">Order a package<span>
+                    <div class="button_circle">
+                        <div class="button_text">
+                            <span>Order a package</span>
+                            <img src="images/dest/arrow-button.svg" alt="Arrow Button">
+                        </div>
+                    </div>   
+                </a> 
+                </div>
+                <button class="popup_close">
+                    <img src="images/dest/popup-close.svg" alt="Icon Close" class="popup_close_icon">
+                </button>
+            </div>       
+        </section>
+        <section class="applications">
+            <div class="text_block">
+                <h3 class="subtitle">Applications</h3>
+                <h2 class="title">
+                   Discover a portfolio of our powerful apps
+                   built to extend your success
+                </h2>
+            </div>
+            <div class="services_cards applications_cards text_block">
+                <div class="services_card applications_card">
+                    <img src="images/dest/mtdt_logo.png" alt="MTDT Logo" class="services_icon">
+                    <div class="applications_content">
+                        <div>
+                            <h4 class="applications_card_title">MTDT</h4>
+                            <p class="services_card_list applications_card_text">
+                               Salesforce deployments without the hassle
+                            </p>
+                        </div>
+                        <a href="https://mtdt.io/" class="applications_card_link">See more</a>
+                    </div>
+                    <img src="images/dest/service-gradient.svg" alt="Services Gradient" class="services_gradient">
+                </div>
+                <div class="services_card applications_card">
+                    <img src="images/dest/unlimail_logo.png" alt="Unlimail Icon" class="services_icon">
+                    <div class="applications_content">
+                        <div>
+                            <h4 class="applications_card_title">Unlimail</h4>
+                            <p class="services_card_list applications_card_text">Native email marketing for Salesforce</p>
+                        </div>
+                        <a href="https://unlimail.com/" class="applications_card_link applications_card_link_2">See more</a>
+                    </div>
+                    <img src="images/dest/service-gradient.svg" alt="Services Gradient" class="services_gradient">
+                </div>
+                <div class="services_card applications_card">
+                    <img src="images/dest/ppl-1.png" alt="Leads logo" class="services_icon">
+                    <div class="applications_content">
+                        <div>
+                            <h4 class="applications_card_title">Leads</h4>
+                            <p class="services_card_list applications_card_text">The easiest, fastest and the most robust way of having multiple Contacts per Lead</p>
+                        </div>
+                        <a href="#" class="applications_card_link applications_card_link_default">Coming soon</a>
+                    </div>
+                    <img src="images/dest/service-gradient.svg" alt="Services Gradient" class="services_gradient">
+                </div>
+                <div class="services_card applications_card">
+                    <img src="images/dest/EAGLEVIEW LOGO STACKED GRAY.png" alt="EagleView Sync Logo" class="services_icon">
+                    <div class="applications_content">
+                        <div>
+                            <h4 class="applications_card_title">EagleView Sync</h4>
+                            <p class="services_card_list applications_card_text">Connect your EagleView account and place orders directly within Salesforce</p>
+                        </div>
+                        <a href="#" class="applications_card_link applications_card_link_default">Coming soon</a>
+                    </div>
+                    <img src="images/dest/service-gradient.svg" alt="Services Gradient" class="services_gradient">
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="text_block">
+                <h3 class="subtitle">Reviews</h3>
+                <h2 class="title">
+                    Don’t listen to us.
+                    Listen to our customers!
+                </h2>
+            </div>
+            <div class="reviews_widget">
+                <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="8" data-height="200" data-nofollow="true" data-expandifr="true"  data-scale="100" data-reviews="347819,345223,344805,339554,335648,331060" data-clutchcompany-id="2352951"></div>
+                <div class="reviews_block1"></div>
+                <div class="reviews_block2"></div>
+            </div>
+            <div class="reviews_badges">
+                <div class="reviews_badges_card">
+                    <img src="images/dest/reviews_badge1.png" alt="Badge Bagde 1" class="reviews_badges_card_img1">
+                    <p class="reviews_badges_card_text">Top crm consulting company<br> 
+                        Poland 2025</p>
+                </div>
+                <div class="reviews_badges_card">
+                    <img src="images/dest/reviews-badge-2.png" alt="Badge Bagde 2" class="reviews_badges_card_img2">
+                    <p class="reviews_badges_card_text">Top crm consulting company<br> 
+                        Poznan 2025</p>
+                </div>
+                <div class="reviews_badges_card">
+                    <img src="images/dest/reviews-badge-3.png" alt="Badge Bagde 3" class="reviews_badges_card_img3">
+                    <p class="reviews_badges_card_text">
+                        A global movement for<br> corporate impact
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="cases">
+            <div class="text_block">
+                <h3 class="subtitle">Latest Cases</h3>
+                <h2 class="title">
+                    Gain a deeper learning of our success stories
+                </h2>
+            </div>
+            <div class="swiper-container slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/dest/slider-img-1.png" alt="Slide Image1" class="cases_img">
+                        <div class="cases_overlay">
+                            <div class="cases_container">
+                                <div class="cases_text">
+                                    <p>Apollo Intelligence</p>
+                                    <p class="cases_text_green">Healthcare</p>
+                                </div>
+                                <a href="#" download class="cases_button_download">
+                                    <img src="images/dest/ic_download.svg" alt="Icon Download">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/dest/slider-img-2.png" alt="Slide Image2" class="cases_img">
+                        <div class="cases_overlay">
+                            <div class="cases_container">
+                                <div class="cases_text">
+                                    <p>NDA</p>
+                                    <p class="cases_text_green">Financial Services</p>
+                                </div>
+                                <a href="#" download class="cases_button_download">
+                                    <img src="images/dest/ic_download.svg" alt="Icon Download">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/dest/slider-img-3.png" alt="Slide Image3" class="cases_img">
+                        <div class="cases_overlay">
+                            <div class="cases_container">
+                                <div class="cases_text">
+                                    <p>Movacar</p>
+                                    <p class="cases_text_green">Transportation</p>
+                                </div>
+                                <a href="#" download class="cases_button_download">
+                                    <img src="images/dest/ic_download.svg" alt="Icon Download">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/dest/slider-img-1.png" alt="Slide Image4" class="cases_img">
+                        <div class="cases_overlay">
+                            <div class="cases_container">
+                                <div class="cases_text">
+                                    <p>Apollo Intelligence</p>
+                                    <p class="cases_text_green">Healthcare</p>
+                                </div>
+                                <a href="#" download class="cases_button_download">
+                                    <img src="images/dest/ic_download.svg" alt="Icon Download">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/dest/slider-img-2.png" alt="Slide Image5" class="cases_img">
+                        <div class="cases_overlay">
+                            <div class="cases_container">
+                                <div class="cases_text">
+                                    <p>NDA</p>
+                                    <p class="cases_text_green">Healthcare</p>
+                                </div>
+                                <a href="#" download class="cases_button_download">
+                                    <img src="images/dest/ic_download.svg" alt="Icon Download">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/dest/slider-img-3.png" alt="Slide Image6" class="cases_img">
+                        <div class="cases_overlay">
+                            <div class="cases_container">
+                                <div class="cases_text">
+                                    <p>Movacar</p>
+                                    <p class="cases_text_green">Transportation</p>
+                                </div>
+                                <a href="#" download class="cases_button_download">
+                                    <img src="images/dest/ic_download.svg" alt="Icon Download">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cases_buttons">
+                    <div class="swiper-button-prev">
+                        <img src="images/dest/arrow-left-prev.svg" alt="Arrow Button Previous">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="images/dest/arrow-right-next.svg" alt="Arrow Button Next">
+                    </div> 
+                </div> 
+            </div>
+        </section>
+        <section class="contact_us" id="form">
+            <form class="contact_us_form contact_us_submit_form" id="submit_form" method="POST" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D0b000000E8Eu">
+                <!-- Salesforce required hidden fields -->
+                <input type="hidden" name="captcha_settings" id="captcha_settings" value='{"keyname":"","fallback":"","":"","ts":""}'>
+                <input type="hidden" name="oid" value="">
+                <input type="hidden" name="retURL" value="">
+                <input type="hidden" name="lead_source" value="Website">
+                <img src="images/dest/form-gradient_1.svg" alt="Gradient Form" class="contact_us_form_gradient_1">
+                <img src="images/dest/form-gradient_2.svg" alt="Gradient Form" class="contact_us_form_gradient_2">
+                <h3 class="contact_us_form_title">Let's connect</h3>
+
+                <!-- Mapped field names to Salesforce requirements -->
+                <input type="text" name="last name" id="last_name" placeholder="Full Name*" required/>
+                <input type="email" name="email" id="email" placeholder="Email*" required/>
+                <input type="tel" name="phone" id="phone" placeholder="Your phone"/>
+                <input type="text" name="Send Message" placeholder="Message"/>
+                <label for="agree" class="contact_us_label">
+                    <input type="checkbox" name="agree" id="agree" required/>
+                    <p>
+                        I agree to share my personal and contact data with Propeller Plan.
+                        I have read the <a href="https://propellerplan-website.s3.eu-north-1.amazonaws.com/PropellerPlan_PrivacyPolicy.pdf" target="_blank">Privacy Policy</a>
+                        and accept it
+                    </p>
+                </label>
+                <div class="g-recaptcha" data-sitekey=""></div><br>
+                <button class="button contact_us_button">
+                    <span class="button_text">Send request<span>
+                    <div class="button_circle">
+                        <div class="button_text">
+                            <span>Send request</span>
+                            <img src="images/dest/arrow-button.svg" alt="Arrow Button">
+                        </div>
+                    </div>   
+                </button>
+            </form>
+            <div class="contact_us_form contact_us_modal hidden" id="modal">
+                <img src="images/dest/form-gradient_1.svg" alt="Gradient Form" class="contact_us_form_gradient_1">
+                <img src="images/dest/form-gradient_2.svg" alt="Gradient Form" class="contact_us_form_gradient_2">
+                <img src="images/dest/icon-modal.png" alt="Icon Modal" class="contact_us_modal_icon">
+                <h3 class="contact_us_form_title contact_us_modal_title">Thank you for contacting Propeller Plan! <br>
+                 We’ve received your inquiry and will get back to you shortly</h3>
+                <p class="contact_us_modal_text">In the meantime, feel free to explore our website to learn more about our services/products</p>
+                <a onclick="contactUsModalClick()" class="contact_us_modal_button">Ok, thanks</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="footer_top_item">
+                <h3 class="footer_top_title">Team for Your Business</h3>
+                <div class="footer_top_social">
+                    <a href="https://www.linkedin.com/company/propeller-plan/" class="footer_top_social_link" target="_blank">
+                        <img src="images/dest/ic_in.svg" alt="Icon In">
+                    </a>
+                    <a href="https://www.facebook.com/PropellerPlanHQ" class="footer_top_social_link" target="_blank">
+                        <img src="images/dest/ic_facebook.svg" alt="Icon Facebook">
+                    </a>
+                    <a href="https://x.com/PropellerPlanHQ" class="footer_top_social_link" target="_blank">
+                        <img src="images/dest/ic_x.svg" alt="Icon X">
+                    </a>
+                    <a href="https://www.instagram.com/propeller.plan?igsh=MXhvNGRrMWU3N2VvMw==" class="footer_top_social_link" target="_blank">
+                        <img src="images/dest/ic_instagramme.svg" alt="Icon Instagramme">
+                    </a>
+                </div>
+            </div>
+            <nav class="footer_top_item footer_top_nav">
+                <a href="#scroll_to_services" class="footer_top_nav_link" id="scroll_to_section">Service</a>
+                <a href="#scroll_to_packages" class="footer_top_nav_link" id="scroll_to_section">Packages</a>
+                <a href="about.html" class="footer_top_nav_link">Team</a>
+                <a href="contact.html" class="footer_top_nav_link">Contact</a>
+            </nav>
+            <div class="footer_top_item footer_top_contact_info">
+                <div class="footer_top_block">
+                    <img src="images/dest/US.png" srcset="US 1x.png, US 2x.png, US 3x.png" alt="Image Flag US" class="footer_top_block_img">
+                    <div>
+                        <address class="footer_top_item_address">333 Broadway #350, Troy, NY 12180, United States</address>
+                        <div class="footer_top_item_phone">Phone: <a href="tel:+1(929)3091419">+1 (929) 309 1419</a></div>
+                    </div> 
+                </div>
+                <div class="footer_top_block">
+                    <img src="images/dest/PL.png" srcset="PL 1x.png, PL 2x.png, PL 3x.png" alt="Image Flag PL" class="footer_top_block_img">
+                    <div>
+                        <address class="footer_top_item_address">Święty Marcin 29/8 61-806 Poznań, Poland</address>
+                        <div class="footer_top_item_phone">Phone: <a href="tel:+48 616 166 261">+48 616 166 261</a></div>
+                    </div> 
+                </div>
+                <div class="footer_top_block">
+                    <div class="footer_top_block_img"></div>
+                    <div>
+                        <div class="footer_top_item_email">Email: <a href="mailto:contact@propellerplan.com">contact@propellerplan.com</a></div>
+                        <a href="https://propellerplan-website.s3.eu-north-1.amazonaws.com/PropellerPlan_PrivacyPolicy.pdf" class="footer_top_item_policy" target="_blank">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_middle">
+            <img src="images/dest/footer-logo.png" alt="Footer Logo" class="footer_logo">
+            <img src="images/dest/footer-title.svg" alt="Footer Title" class="footer_title">
+        </div>
+        <div class="footer_bottom">
+            <img src="images/dest/global_radar logo 1.png" class="footer_bottom_icon" alt="Footer Logos Logo1">
+            <img src="images/dest/vertic_logo-smaller 1.png" class="footer_bottom_icon"  alt="Footer Logos Logo2">
+            <img src="images/dest/armellini.png" class="footer_bottom_icon" alt="Footer Logos Logo3">
+            <img src="images/dest/Xappex Logo@3x.png" class="footer_bottom_icon" alt="Footer Logos Logo4">
+            <img src="images/dest/Apollo-intelligence-logo.png" class="footer_bottom_icon"  alt="Footer Logos Logo5">
+            <img src="images/dest/Kometsales.png" class="footer_bottom_icon" alt="Footer Logo" alt="Footer Logos Logo6">
+            <img src="images/dest/jahez_logo 1.png" class="footer_bottom_icon" alt="Footer Logo" alt="Footer Logos Logo7">
+            <img src="images/dest/Movacar.png" class="footer_bottom_icon" alt="Footer Logo" alt="Footer Logos Logo8">
+        </div>
+    </footer>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://widget.clutch.co/static/js/widget.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>   
+</body>
+</html>
