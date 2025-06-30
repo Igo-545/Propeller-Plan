@@ -1,0 +1,8 @@
+File from: [app/images/src/ic_Integration.png]
+
+File to: [app/images/dest/ic_Integration.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\Users\User\Desktop\Propeller Plan\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o app/images/dest/ic_Integration.png app/images/src/ic_Integration.png
+  error: 'app\images\dest\ic_Integration.png' exists; not overwriting

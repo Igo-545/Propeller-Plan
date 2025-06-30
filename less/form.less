@@ -1,0 +1,112 @@
+.contact_us{
+    padding-top: 60px;
+    padding-bottom: 120px;
+    text-align: center;
+    &_form{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        max-width: 1126px;
+        margin: 0 auto;
+        padding: 5.555vw 13.888vw;
+        background: @background-grey-third;
+        border-radius: @border-radius-24;
+        border: 1px solid @background-grey-third;
+        &_gradient_1{
+            position: absolute;
+            top: -88px;
+            left: 0;
+            width: 612px;
+            height: 612px;
+        }
+        &_gradient_2{
+            position: absolute;
+            bottom: -88px;
+            right: 0;
+            width: 612px;
+            height: 612px;
+        }
+        &_title{
+            font-size: 36px;
+            letter-spacing: -1.08px;
+            line-height: 120%;
+            padding-bottom: 40px;
+        }
+    }
+    &_modal{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 828px;
+            padding: 0 200px;
+            &_contact{
+                min-height: 745px;
+                padding: 0;
+            }
+            &_icon{
+                margin-bottom: 40px;
+                width: 52px;
+                height: 52px;
+                border-radius: @border-radius-100;
+            }
+            &_title{
+                padding-bottom: 0;
+            }
+            &_text{
+                font-family: 'Inter Display Regular';
+                padding-top: 32px;
+                padding-bottom: 48px;
+                font-size: 18px;
+                line-height: 140%;
+                color: @color-grey-thourth;
+            }
+            &_button{
+                font-family: 'Inter Display Medium';
+                font-size: 17px;
+                line-height: 110%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                cursor: pointer;
+                border-radius: @border-radius-100;
+                background: @color-black;
+                color: @color-white;
+                width: 121px;
+                height: 44px;
+                z-index: 2;
+                &:hover{
+                    background: #2F2F2F;
+                }
+            }
+            &.hidden{
+                display: none;
+            }
+    }
+    &_label{
+        display: inline-flex;
+        justify-content: center;
+        font-size: 17px;
+        line-height: 120%;
+        font-family: 'Inter Display Regular';
+        color: @color-grey-thourth;
+        z-index: 1;
+        & a{
+            text-decoration: underline;
+        }
+        &.has-error{
+            color: #C25252;
+            input[type="checkbox"]:before{
+                border: 1px solid #C25252;
+            }
+        }
+    }
+    &_button{
+        margin-top: 48px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

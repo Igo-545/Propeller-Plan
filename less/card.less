@@ -1,0 +1,121 @@
+.consultation{
+    padding-top: 60px;
+    &_button{
+        margin-top: 87px;
+        margin-bottom: 60px;
+    }
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    column-gap: 60px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1126px;
+    padding-right: 60px;
+    border-radius: @border-radius-24;
+    border: 1px solid @border-color-grey-third;
+    &::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background: @background-laym;
+        border-radius: @border-radius-24;
+    }
+    &.packages_card::after{
+        background: @background-grey-third;
+    }
+    &.popup_card_1::after{
+        background: @background-violet;
+    }
+    &.popup_card_2::after{
+        background: @background-yellow;
+    }
+    &.popup_card_3::after{
+        background: @background-green;
+    }
+    &.popup_card_4::after{
+        background: @background-ultrablue;
+    }
+    .col-1{
+        max-width: 470px;
+    }
+    &_col-1{
+        position: relative;
+        border-radius: @border-radius-24;
+        max-width: 470px;
+        &_img{
+            width: 100%;
+            height: 100%;
+            border-radius: @border-radius-24;
+            object-fit: cover;
+        }
+        &_gradient{
+            width: 100%;
+            opacity: 0;
+            border-radius: @border-radius-24;
+            position: absolute;
+        }
+    }
+    &_col-2{
+        width: 536px;
+        text-align: left;
+    }
+    &_icon{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 36px;
+        left: 36px;
+        z-index: 2;
+    }
+    &_title{
+        padding-top: 60px;
+        font-size: 36px;
+        line-height: 120%;
+    }
+    &_list{
+        padding-top: 52px;
+    }
+    &_item{
+        display: flex;
+        flex-shrink: 0;
+        margin-bottom: 8px;
+        color: @color-grey-third;
+        font-family: 'Inter Regular';
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &_number{
+            flex-shrink: 0;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 26px;
+            height: 26px;
+            border-radius: @border-radius-circle;
+            background: transparent;
+            border: 1px solid @color-grey-third;
+        }
+        &_text{
+            padding-left: 8px;
+            font-size: 20px;
+            line-height: 140%;
+        }
+    }
+    &_button{
+        width: 220px;
+        margin-top: 90px;
+        margin-bottom: 60px;
+    }
+    &:hover .card_col-1_gradient{
+        opacity: 1;
+    }
+}

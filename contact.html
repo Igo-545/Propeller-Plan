@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/dest/Propeller_Plan_ic_black_mono.ico">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function timestamp(){
+            var response = document.getElementById('g-recaptcha-response');
+            if(response == 'null' || response.value.trim() == ''){
+                var elems = JSON.parse(document.getElementById('captcha_settings').value);
+                elems['ts'] = JSON.stringify(new Date().getTime());
+                document.getElementById('captcha_settings').value = JSON.stringify(elems);
+            }
+        }
+        setInterval(timestamp, 500);
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZEV8W2443"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-1ZEV8W2443');
+    </script>
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_block">
+            <a href="index.html" class="header_logo">
+                <img src="images/dest/header-logo-icon.svg" alt="Header Logo Icon" class="header_logo_icon">
+                <img src="images/dest/Propeller Plan.svg" alt="Header Logo Label" class="header_logo_label">
+            </a>
+            <a href="https://appexchange.salesforce.com/appxConsultingListingDetail?listingId=2028944c-f680-4b2d-85cc-ae998d73e35c&legacy=true" target="_blank">
+                <img src="images/dest/Salesforce_Partner_Badge_Since_2018_Hrzntl_RGB 1.png" alt="Propeller Plan Badge" class="header_logo_badge">
+            </a>
+        </div>
+        <nav class="header_nav">
+            <a href="index.html#scroll_to_services" class="header_nav_link">Service</a>
+            <a href="index.html#scroll_to_packages" class="header_nav_link">Packages</a>
+            <a href="about.html" class="header_nav_link">Team</a>
+            <a href="contact.html" class="header_nav_link">Contact</a>
+            <a href="#form" class="header_nav_button" id="scroll_to_form">Lets Connect</a>
+        </nav>
+        <div class="header_humburger">
+            <div class="header_humburger_line1"></div>
+            <div class="header_humburger_line2"></div>
+        </div>
+    </header>
+    <menu class="menu">
+        <div class="menu_nav">
+            <div class="menu_nav_links">
+                <a href="index.html#scroll_to_services" class="menu_nav_link">Service</a>
+                <a href="index.html#scroll_to_packages" class="menu_nav_link">Packages</a>
+                <a href="about.html" class="menu_nav_link">Team</a>
+                <a href="contact.html" class="menu_nav_link">Contact</a>
+            </div>
+            <a href="index.html#form" class="menu_nav_button" id="scroll_to_form">Lets Connect</a>
+        </div>
+    </menu>
+    <main>
+        <section class="hero hero_contact">
+            <div class="hero_content hero_content_contact">
+                <h3 class="subtitle subtitle_contact">Contact</h3>
+                <h1 class="hero_title hero_title_contact">
+                   Avaliable worldwide. Internationally based
+                </h1>
+            </div>
+            <img src="images/dest/hero_gradient_contact.svg" alt="Hero Gradient" class="hero_gradient_contact">
+            <img src="images/dest/map-image.png" alt="Image Map" class="hero_map">
+        </section>
+        <section class="contact">
+            <div class="contact_col">
+                <h3 class="contact_col_title">Our operations are headquartered in the USA and Poland. Feel free to reach out via email or submit a request through the contact form</h3>
+                <div class="contact_col_items">
+                    <div class="contact_col_item">
+                        <div class="contact_col_block">
+                            <img src="images/dest/US.png" alt="Contact Image" class="contact_col_image">
+                        </div>
+                        <div class="contact_col_text">
+                            <div>333 Broadway #350, Troy, NY, 12180 United States</div> 
+                            <a href="tel:+1(929)3091419">+1 (929) 309 1419</a> 
+                        </div>
+                    </div>
+                    <div class="contact_col_item">
+                        <div class="contact_col_block">
+                            <img src="images/dest/PL.png" alt="Contact Image" class="contact_col_image">
+                        </div>
+                        <div class="contact_col_text">
+                            <div>Święty Marcin 29/8 
+                                61-806 Poznań, Poland
+                            </div>
+                            <a href="tel:+48616166261">+48 616 166 261</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="mailto:contact@propellerplan.com" class="contact_col_info">contact@propellerplan.com</a>
+            </div>
+            <div class="contact_col">
+                <form class="contact_form contact_us_form contact_us_submit_form" method="POST" id="form" action="">
+                    <h3 class="contact_us_form_title">Fill out the contact form</h3>
+                    <!-- Salesforce required hidden fields -->
+                    <input type="hidden" name="captcha_settings" id="captcha_settings" value='{"keyname":"","fallback":"","orgId":"","ts":""}'>
+                    <input type="hidden" name="oid" value="">
+                    <input type="hidden" name="retURL" value="">
+                    <input type="hidden" name="lead_source" value="Website">
+                    
+                    <!-- Mapped field names to Salesforce requirements -->
+                    <input type="text" name="last name" id="last_name" placeholder="Full Name*" required/>
+                    <input type="email" name="email" id="email" placeholder="Email*" required/>
+                    <input type="tel" name="phone" id="phone" placeholder="Your phone"/>
+                    <input style="display: none" type="text" name="00NPj000003IVI9" id="00NPj000003IVI9" readonly/>
+                    <input type="text" name="Send Message" placeholder="Message"/>
+                    <label for="agree" class="contact_us_label">
+                        <input type="checkbox" name="agree" id="agree" required/>
+                        <p class="contact_col_agree">I agree to share my personal and contact data with Propeller Plan. I have read the <a href="https://propellerplan-website.s3.eu-north-1.amazonaws.com/PropellerPlan_PrivacyPolicy.pdf" target="_blank">Privacy Policy</a> and accept it</p>
+                    </label>
+                    <div class="g-recaptcha" data-sitekey=""></div><br>
+                    <button class="button contact_us_button" type="submit">
+                        <span class="button_text">Send request<span>
+                        <div class="button_circle">
+                            <div class="button_text">
+                                <span>Send request</span>
+                                <img src="images/dest/arrow-button.svg" alt="Arrow Button">
+                            </div>
+                        </div>   
+                    </button>
+                </form>
+                <div class="contact_us_form contact_us_modal contact_us_modal_contact hidden" id="modal">
+                    <img src="images/dest/icon-modal.png" alt="Icon Modal" class="contact_us_modal_icon">
+                    <h3 class="contact_us_form_title contact_us_modal_title">Success! Your request has been sent, our specialist will contact you</h3>
+                    <p class="contact_us_modal_text">Refresh the page to make the next request</p>
+                    <a onclick="contactUsModalClick()" class="contact_us_modal_button">Ok, thanks</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="footer_top_item">
+                <h3 class="footer_top_title">Team for Your Business</h3>
+                <div class="footer_top_social">
+                    <a href="https://www.linkedin.com/company/propeller-plan/" class="footer_top_social_link">
+                        <img src="images/dest/ic_in.svg" alt="Icon In">
+                    </a>
+                    <a href="https://www.facebook.com/PropellerPlanHQ" class="footer_top_social_link" target="_blank">
+                        <img src="images/dest/ic_facebook.svg" alt="Icon Facebook">
+                    </a>
+                    <a href="https://x.com/PropellerPlanHQ" class="footer_top_social_link" target="_blank">
+                        <img src="images/dest/ic_x.svg" alt="Icon X">
+                    </a>
+                    <a href="https://www.instagram.com/propeller.plan?igsh=MXhvNGRrMWU3N2VvMw==" class="footer_top_social_link" target="_blank">
+                        <img src="images/dest/ic_instagramme.svg" alt="Icon Instagramme">
+                    </a>
+                </div>
+            </div>
+            <nav class="footer_top_item footer_top_nav">
+                <a href="index.html#scroll_to_services" class="footer_top_nav_link">Service</a>
+                <a href="index.html#scroll_to_packages" class="footer_top_nav_link">Packages</a>
+                <a href="about.html" class="footer_top_nav_link">Team</a>
+                <a href="contact.html" class="footer_top_nav_link">Contact</a>
+            </nav>
+             <div class="footer_top_item footer_top_contact_info">
+                <div class="footer_top_block">
+                    <img src="images/dest/US.png" srcset="US 1x.png, US 2x.png, US 3x.png" alt="Image Flag US" class="footer_top_block_img">
+                    <div>
+                        <address class="footer_top_item_address">333 Broadway #350, Troy, NY 12180, United States</address>
+                        <div class="footer_top_item_phone">Phone: <a href="tel:+1(929)3091419">+1 (929) 309 1419</a></div>
+                    </div> 
+                </div>
+                <div class="footer_top_block">
+                    <img src="images/dest/PL.png" srcset="PL 1x.png, PL 2x.png, PL 3x.png" alt="Image Flag PL" class="footer_top_block_img">
+                    <div>
+                        <address class="footer_top_item_address">Święty Marcin 29/8 61-806 Poznań, Poland</address>
+                        <div class="footer_top_item_phone">Phone: <a href="tel:+48 616 166 261">+48 616 166 261</a></div>
+                    </div> 
+                </div>
+                <div class="footer_top_block">
+                    <div class="footer_top_block_img"></div>
+                    <div>
+                        <div class="footer_top_item_email">Email: <a href="mailto:contact@propellerplan.com">contact@propellerplan.com</a></div>
+                        <a href="https://propellerplan-website.s3.eu-north-1.amazonaws.com/PropellerPlan_PrivacyPolicy.pdf" class="footer_top_item_policy" target="_blank">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_middle">
+            <img src="images/dest/footer-logo.png" alt="Footer Logo" class="footer_logo">
+            <img src="images/dest/footer-title.svg" alt="Footer Title" class="footer_title">
+        </div>
+        <div class="footer_bottom">
+            <img src="images/dest/global_radar logo 1.png" class="footer_bottom_icon" alt="Footer Logos Logo1">
+            <img src="images/dest/vertic_logo-smaller 1.png" class="footer_bottom_icon"  alt="Footer Logos Logo2">
+            <img src="images/dest/armellini.png" class="footer_bottom_icon" alt="Footer Logos Logo3">
+            <img src="images/dest/Xappex Logo@3x.png" class="footer_bottom_icon" alt="Footer Logos Logo4">
+            <img src="images/dest/Apollo-intelligence-logo.png" class="footer_bottom_icon"  alt="Footer Logos Logo5">
+            <img src="images/dest/Kometsales.png" class="footer_bottom_icon" alt="Footer Logo" alt="Footer Logos Logo6">
+            <img src="images/dest/jahez_logo 1.png" class="footer_bottom_icon" alt="Footer Logo" alt="Footer Logos Logo7">
+            <img src="images/dest/Movacar.png" class="footer_bottom_icon" alt="Footer Logo" alt="Footer Logos Logo8">
+        </div>
+    </footer> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://widget.clutch.co/static/js/widget.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

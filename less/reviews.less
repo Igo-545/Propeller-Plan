@@ -1,0 +1,66 @@
+.reviews{
+    padding-top: 80px;
+    padding-bottom: 120px;
+    width: 100%;
+    background: #fafafa;
+    border-radius: @border-radius-24;
+    &_widget{
+        position: relative;
+        padding-top: 80px;
+        margin: 0 auto;
+        max-width: 915px;
+    }
+    &_block1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 31px;
+        height: 100%;
+        background: #fafafa;
+    }
+    &_block2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 31px;
+        height: 100%;
+        background: #fafafa;
+    }
+    &_badges{
+        max-width: 524px;
+        margin: 80px auto 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        &_card{
+            height: fit-content;
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            &_img1{
+                width: 111.11px;
+                height: 120px;
+            }
+            &_img2{
+                width: 111.11px;
+                height: 120px;
+            }
+            &_img3{
+                margin-top: 23px;
+                width: 88.62px;
+                height: 92px;
+            }
+            &_text{
+                text-align: center;
+                font-size: 14px;
+                line-height: 120%;
+                font-family: 'Inter Regular';
+                color: @color-grey-thourth;
+            }
+        }   
+    }
+}
