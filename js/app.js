@@ -71,6 +71,9 @@
                      1024: {
                     slidesPerView: 'auto'
                     },
+                    1280: {
+                        slidersPerView: 3
+                    },
                      1440: {
                      slidesPerView: 3
                     },
