@@ -47,7 +47,7 @@
         /*Swiper slider*/
          $(('.slider').length)
                 new Swiper('.slider',{
-                    slidesPerView: 'auto',
+                    slidesPerView: 3,
                     spaceBetween: 20,
                     direction: 'horizontal',
                     loop: !0,
@@ -72,6 +72,9 @@
                     slidesPerView: 'auto'
                     },
                      1440: {
+                     slidesPerView: 3
+                    },
+                    1620: {
                      slidesPerView: 3
                     },
                 }
